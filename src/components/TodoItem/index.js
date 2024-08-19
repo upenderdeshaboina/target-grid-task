@@ -19,7 +19,7 @@ const TodoItem = ({ addSelectedLabel,task, toggleComplete, editTask, deleteTask,
 
   
   return (
-    <li className={task.completed ? 'todo-item completed' : 'todo-item'}>
+    <li className={task.completed ? 'todo-item open' : 'todo-item'}>
       <div className='checkbox-delete'>
         <input
           type="checkbox"
@@ -45,7 +45,7 @@ const TodoItem = ({ addSelectedLabel,task, toggleComplete, editTask, deleteTask,
       <div className='select-container'>
         <select onChange={onChangeLabel}>
           {labels.map(e => (
-            <option key={e.id} value={e.name}>{e.name}</option>
+            <option key={e.id} value={e.name} selected>{e.name}</option>
           ))}
         </select>
           <LabelManager labels={labels} addLabel={addLabel}/>

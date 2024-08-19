@@ -11,8 +11,8 @@
     margin-right: 10px;
     margin-bottom: 5px;
 }
-.todo-item:completed{
-    border: 1px solid green;
+.todo-item.open{
+    border: 2px solid green;
 }
 .checkbox-delete{
     display: flex;

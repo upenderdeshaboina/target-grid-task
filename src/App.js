@@ -62,6 +62,7 @@ class App extends Component {
 
   removeTasks=()=>{
     localStorage.removeItem('tasks')
+    this.setState({tasks:[]})
   }
 
   render() {
